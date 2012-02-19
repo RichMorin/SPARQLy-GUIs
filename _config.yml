@@ -1,1 +1,4 @@
-source: ./recipes
+# _config.yml
+
+  destination: ./reports
+  source:      ./recipes

@@ -1,4 +1,4 @@
-<!-- load_js.html - load JavaScript libraries -->
+<!-- load_js.markdown - load JavaScript libraries -->
 
 <script>var ENV = { EXTEND_PROTOTYPES: false };</script>
 
