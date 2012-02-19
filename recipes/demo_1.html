@@ -95,11 +95,10 @@ SELECT ?param ?label WHERE {
       </div>
     </ul>
 
-%INCLUDE{"Demo_1_JS"}%<p>
+{% include demo_1/load_js.html %}
 
 <script type='text/coffeescript'>
 
-{% include demo_1/load_js.html %}
 {% include demo_1/chart.coffee %}
 {% include demo_1/query.coffee %}
 {% include demo_1/table.coffee %}
@@ -111,6 +110,5 @@ SELECT ?param ?label WHERE {
 </script>
 
 
-
-
   </body>
+</html>
