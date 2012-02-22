@@ -1,9 +1,13 @@
-# Demo 1
+---
+layout:   recipe
+title:    Demo 1
+---
 
-This page demonstrates an early version of a SPARQLy GUIs recipe,<br>
-making a request to DBpedia and displaying the results.
+This page demonstrates a relatively simple SPARQLy GUIs recipe.
+It accepts user input, creates and sends a SPARQL request to DBpedia,
+and displays the results in tabular and graphic form.
 
-To give the demonstration a try, set the row limit (if desired),<br>
+To give the demonstration a try, set the row limit (if desired),
 then click the "Run Query" button.
 
 <ul>
@@ -30,9 +34,8 @@ then click the "Run Query" button.
 ### Graph
 
 Query results are quite likely to be noisy.
-This isn't a problem for a table,<br>
-but it can confuse the graphing code.
-So, a bit of filtering may be needed.<br>
+This isn't a problem for a table, but it can confuse the graphing code.
+So, a bit of filtering may be needed.
 In this case, we only accept values under 15000.
 
 <ul>
@@ -55,48 +58,28 @@ written in a combination of SPARQL and Handlebars.
 Variable information is provided by client-side code,
 based on user input, etc.
 
-This template, in particular, defines several parts of the query:
+The following template, in particular, defines several parts of the query:
 
-<ul>
-  <li>definitions for <tt>prefixes</tt>
-  <li>the <tt>param</tt> (eg, <tt>elevationFt</tt>)
-  <li>the <tt>limit</tt> (eg, 10) on rows</tt>
-</ul>
+* definitions for `prefixes`
+* the `param` (eg, `elevationFt`)
+* the `limit` (eg, 10) on `rows`
 
-<ul>
-  <pre id="sparql_template">
-{{#each prefixes }}PREFIX  {{{ this }}}
-{{/each }}
-SELECT ?param ?label WHERE {
-  ?place
-    rdf:type dbpo:City ;
-    {{ param }} ?param ;
-    rdfs:label ?label .
-    FILTER (lang(?label) = "en")
-} ORDER BY DESC(?param) LIMIT {{ limit }}
-  </pre>
-</ul>
+{% include demo_1/sparql_template.html %}
+
+*Note:*
+Jekyll, used by GitHub Pages, handles inclusion processing (etc)
+by means of Liquid.
+Unfortunately, some of the syntax used by Liquid and Handlebars
+(eg, <tr>{&#123; ... &#125;}</tr>) collides.
+So, we are using a slightly modified version of the Handlebars syntax
+(eg, <tr>{| ... |}</tr>, <tr>{|| ... ||}</tr>).
 
 ### SPARQL query
 
 Here is the actual SPARQL query, as sent to DBpedia:
 
-<ul>
+<blockquote>
   <div id="sparql_query">
     This will be a SPARQL query...
   </div>
-</ul>
-
-{% include demo_1/load_js.html %}
-
-<script type='text/coffeescript'>
-
-{% include demo_1/chart.coffee %}
-{% include demo_1/query.coffee %}
-{% include demo_1/table.coffee %}
-
-  # Set up widgets.
-
-  $('button#run_query').click(do_query)
-
-</script>
+</blockquote>

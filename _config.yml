@@ -1,4 +1,7 @@
 # _config.yml
 
-  destination: ./reports
-  source:      ./recipes
+  destination:  _site
+  lsi:          false
+  pygments:     true
+  safe:         true
+  source:       .
