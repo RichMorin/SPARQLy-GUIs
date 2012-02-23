@@ -1,6 +1,14 @@
 ---
-layout:     recipe
+layout:     recipe_x2
 title:      Demo 1
+
+_cs_code:   |
+  {% include demo_1/lib_chart.coffee %}
+  {% include demo_1/lib_query.coffee %}
+  {% include demo_1/lib_table.coffee %}
+  {% include demo_1/main.coffee %}
+
+_foozle:    Foozle!
 ---
 
 This page demonstrates a relatively simple SPARQLy GUIs recipe.
@@ -22,7 +30,6 @@ then click the "Run Query" button.
 
 
 ## Output
-
 
 ### Table
 
@@ -47,7 +54,6 @@ In this case, we only accept values under 15000.
 
 
 ## Implementation
-
 
 ### SPARQL template
 
@@ -75,7 +81,6 @@ Unfortunately, some of the syntax used by Liquid and Handlebars
 (eg, <tr>{&#123; ... &#125;}</tr>) collides.
 So, we are using a slightly modified version of the Handlebars syntax
 (eg, <tr>{| ... |}</tr>, <tr>{|| ... ||}</tr>).
-
 
 ### SPARQL query
 

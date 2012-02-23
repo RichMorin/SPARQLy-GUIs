@@ -30,18 +30,18 @@ This project uses a number of external resources
 (eg, infrastructure, JavaScript libraries):
 
 * Infrastructure:
-  [GitHub Pages           ](#github_pages),
-  [Jekyll                 ](#jekyll),
-  [Liquid                 ](#liquid),
-  [Markdown               ](#markdown),
-  [Semantic Web           ](#semantic_web)
+  [GitHub             ](#github),
+  [Jekyll             ](#jekyll),
+  [Liquid             ](#liquid),
+  [Markdown           ](#markdown),
+  [Semantic Web       ](#semantic_web)
 
 * JavaScript:
-  [CoffeeScript           ](#coffeescript),
-  [D3                     ](#d3),
-  [Ember                  ](#ember),
-  [Handlebars             ](#handlebars),
-  [jQuery                 ](#jquery)
+  [CoffeeScript       ](#coffeescript),
+  [D3                 ](#d3),
+  [Ember              ](#ember),
+  [Handlebars         ](#handlebars),
+  [jQuery             ](#jquery)
 
 See below for specific information, links, etc.
 
@@ -55,7 +55,7 @@ I prefer CoffeeScript to JavaScript.
 The syntax is cleaner, more powerful, and safer (by default).
 That said, JavaScript is certainly allowed in recipes.
 
-* [CoffeeScript           ]({{ page._cs }})
+* [CoffeeScript             ]({{ page._cs }})
 
 
 ### D3
@@ -63,24 +63,29 @@ That said, JavaScript is certainly allowed in recipes.
 D3 is an extremely flexible library for generating graphics,
 based on dynamic DOM manipulation, SVG, etc.
 
-* [D3                     ]({{ page._dj }})
+* [D3                       ]({{ page._dj }})
 
-* [API                    ]({{ page._dj }}/api)
+* [API                      ]({{ page._dj }}/api)
 
 
 ### Ember
 
-Ember is a very promising framework for generating single-page applications.
+Ember is a very promising framework for single-page web applications.
+We are watching it closely,
+but at present we are only using the Handlebars component.
 
-* [Ember                  ]({{ page._ej }})
+* [Ember                    ]({{ page._ej }})
 
 
-### GitHub Pages
+### GitHub
 
-GitHub Pages provides a collaborative workspace,
-supported by Jekyll (and friends).
+GitHub is a collaborative workspace for software development, etc.
+It is very popular among Open Source projects (eg, Linux, Ruby).
+GitHub Pages publishes selected sets of GitHub files as web pages;
+we use this to publish our recipes, documentation, etc.
 
-* [Introduction to Pages  ](http://pages.github.com/)
+* [GitHub                   ](https://github.com/)
+* [GitHub Pages             ](http://pages.github.com/)
 
 
 ### Handlebars

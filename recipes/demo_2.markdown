@@ -1,6 +1,6 @@
 ---
 layout:     recipe
-title:      Demo 1
+title:      Demo 2
 ---
 
 This page demonstrates a relatively simple SPARQLy GUIs recipe.
@@ -22,7 +22,6 @@ then click the "Run Query" button.
 
 
 ## Output
-
 
 ### Table
 
@@ -66,15 +65,14 @@ The following template, in particular, defines several parts of the query:
 * the `param` (eg, `elevationFt`)
 * the `limit` (eg, 10) on `rows`
 
-{% include demo_1/sparql_template.html %}
+{% include demo_2/sparql_template.html %}
 
 *Note:*
 Jekyll, used by GitHub Pages, handles inclusion processing (etc)
 by means of Liquid.
 Unfortunately, some of the syntax used by Liquid and Handlebars
-(eg, <tr>{&#123; ... &#125;}</tr>) collides.
-So, we are using a slightly modified version of the Handlebars syntax
-(eg, <tr>{| ... |}</tr>, <tr>{|| ... ||}</tr>).
+(eg, <tt>{&#123; ... &#125;}</tt>, <tt>{&#123;{ ... }&#125;}</tt>) collides.
+So, we are using Liquid's `raw` tag to temporarily disable tag processing.
 
 
 ### SPARQL query

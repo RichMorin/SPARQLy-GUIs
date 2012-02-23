@@ -16,10 +16,22 @@ _wp:      http://en.wikipedia.org/wiki
 
 These pages are a start on a collaborative testbed for interactive "recipes",
 using a mix of web-based [resources](docs/resources.html).
-It should be possible to use any recipe by navigating
-to its generated page, eg:
+It should be possible to use any recipe by navigating to its generated page.
+
+
+## Recipes
 
 * [Demo_1       ](recipes/demo_1.html)
+  <p/>
+  Creates a SPARQL query, sends it to DBpedia, and turns the results
+  into a table and a Graph
+
+* [Demo_2       ](recipes/demo_2.html)
+  <p/>
+  Same as Demo_1, but uses Liquid's `raw` tag instead
+  of modified syntax (eg,  `{| ... |}`)
+  to get around the Handlebars/Liquid syntax conflict.
+
 
 ## Documentation
 
