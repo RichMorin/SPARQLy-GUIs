@@ -31,6 +31,8 @@ It should be possible to use any recipe by navigating to its generated page.
   Same as Demo_1, but uses Liquid's `raw` tag instead
   of modified syntax (eg,  `{| ... |}`)
   to get around the Handlebars/Liquid syntax conflict.
+  <p/>
+  *Note:* As of 2012.0223, this demo does not work on GitHub Pages.
 
 
 ## Documentation
