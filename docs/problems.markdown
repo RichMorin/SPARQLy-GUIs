@@ -39,7 +39,9 @@ My current workaround, for example,
 is to use "{| ... |}" and "{|| ... ||}"
 in place of "{&#123; ... &#123;}" and "{&#123;{ ... }&#123;}".
 
-Liquid's `raw` tag provides a reasonably convenient solution.
+Liquid's `raw` tag provides a reasonably convenient solution,
+but the version of Liquid used by Jekyll on GitHub Pages
+does not yet support this tag.
 
 
 ## SPARQL query time-outs on server

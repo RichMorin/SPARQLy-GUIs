@@ -21,14 +21,14 @@ It should be possible to use any recipe by navigating to its generated page.
 
 ## Recipes
 
-* [Demo_1       ](recipes/demo_1.html)
+* [Demo_1a      ](recipes/demo_1a.html)
   <p/>
-  Creates a SPARQL query, sends it to DBpedia, and turns the results
-  into a table and a Graph
+  Creates a SPARQL query, sends it to DBpedia,
+  and displays the results as a table and a bar chart.
 
-* [Demo_2       ](recipes/demo_2.html)
+* [Demo_1b      ](recipes/demo_1b.html)
   <p/>
-  Same as Demo_1, but uses Liquid's `raw` tag instead
+  Same as Demo_1a, but uses Liquid's `raw` tag instead
   of modified syntax (eg,  `{| ... |}`)
   to get around the Handlebars/Liquid syntax conflict.
   <p/>

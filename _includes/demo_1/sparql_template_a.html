@@ -1,0 +1,13 @@
+<ul>
+  <pre id="sparql_template">
+{|#each prefixes |}PREFIX  {|| this ||}
+{|/each |}
+SELECT ?param ?label WHERE {
+  ?place
+    rdf:type dbpo:Country ;
+    {| param |} ?param ;
+    rdfs:label ?label .
+    FILTER (lang(?label) = "en")
+} ORDER BY DESC(?param) LIMIT {| limit |}
+  </pre>
+</ul>
