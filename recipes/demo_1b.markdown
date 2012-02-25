@@ -1,10 +1,12 @@
 ---
 layout:     demo_1
 title:      Demo 1b
+
+_gsg:     https://github.com/RichMorin/SPARQLy-GUIs
 ---
 
 This page demonstrates a relatively simple SPARQLy GUIs recipe.
-It accepts user input, creates and sends a SPARQL query to DBpedia,
+It accepts user input, creates a SPARQL query and sends it to DBpedia,
 then displays the results in tabular and graphic form.
 
 The query asks for the most populous countries in the world,
@@ -58,17 +60,20 @@ Hover over a bar to see the country name and full population estimate.
 
 ## Implementation Notes
 
+The source code for the SPARQLy GUIs pages is located at:
+
+> [{{ page._gsg }}/tree/gh-pages]({{ page._gsg }}/tree/gh-pages)
+
 
 ### SPARQL template
 
-Like SQL queries, each SPARQL query has a fixed function.
+Each SPARQL query has a fixed function.
 In order to use queries for varying tasks,
-we'll need a way to generate appropriate queries.
-
+we need to generate appropriate queries.
 We do this by means of a query template,
 written in a combination of SPARQL and Handlebars.
 Variable information is provided by client-side code,
-based on user input, etc.
+based on user input, etc. 
 
 The following template, in particular, defines several parts of the query:
 
