@@ -47,6 +47,7 @@ To keep the graph headings reasonable,
 we divide the values by 1,000,000 and round the result.
 So, for example, a heading of 600 represents
 a human population estimate of 600,000,000.
+Hover over a bar to see the country name and full population estimate.
 
 <ul>
   <div id="sparql_graph">

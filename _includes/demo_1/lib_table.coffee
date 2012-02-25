@@ -1,4 +1,4 @@
-# lib_table.coffee - table support functions
+# demo_1/lib_table.coffee - table support functions
 #
 # This file contains CoffeeScript code to support table creation.
 # It is included by Demo_1, a "SPARQLy GUIs" recipe.
