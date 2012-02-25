@@ -1,4 +1,4 @@
-# lib_query.coffee - query support for demo_1
+# lib_query.coffee - query support functions
 #
 # This file contains CoffeeScript code to support SPARQL queries.
 # It is included by Demo_1, a "SPARQLy GUIs" recipe.
@@ -46,7 +46,7 @@
 
     context    =
       limit:      limit
-      param:      'dbpp:elevationFt'
+      param:      'dbpp:populationEstimate'
       prefixes:   [
         'dbpo:  <http://dbpedia.org/ontology/>'
         'dbpp:  <http://dbpedia.org/property/>'
@@ -66,7 +66,7 @@
 
   fix_markup = (text) ->
   #
-  # Convert our markup into Handlebars format.
+  # Convert our markup (if need be) into Handlebars format.
 
     b2  = '{' + '{'
     b3  = '{' + '{' + '{'

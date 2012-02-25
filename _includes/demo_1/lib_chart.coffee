@@ -1,4 +1,4 @@
-# lib_chart.coffee - chart support for demo_1
+# lib_chart.coffee - chart support functions
 #
 # This file contains CoffeeScript code to support chart creation.
 # It is included by Demo_1, a "SPARQLy GUIs" recipe.
@@ -16,10 +16,10 @@
 
     rows    = data.results.bindings
     vals    = (parseInt(row['param']['value']) for row in rows)
-    vals    = (val for val in vals when val < 15000)
+    vals    = (Math.round(val/1000000) for val in vals)
 
     x_lim   = 420
-    y_lim   = vals.length * 20
+    y_lim   = vals.length * 10
 
     xf      = d3.scale.linear()
                 .domain([0, d3.max(vals)])
@@ -33,7 +33,6 @@
     add_x_axis_lines(c1, xf, y_lim)
     add_x_axis_names(c1, xf)
     add_bar_rects(c1, vals, xf, yf)
-    add_bar_text( c1, vals, xf, yf)
     add_x_axis_start(c1, y_lim)
 
   new_chart = (pattern, x_lim, y_lim) ->
@@ -97,19 +96,3 @@
       .attr('height',             yf.rangeBand())
       .style('stroke',            'white')
       .style('fill',              'steelblue')
-
-  add_bar_text = (chart, data, xf, yf) ->
-  #
-  # Add text to annotate bars.
-
-    chart.selectAll('.bar')
-      .data(data)
-      .enter().append('text')
-      .attr('class',              'bar')
-      .attr('x',                  xf)
-      .attr('y',                  (d) -> yf(d) + yf.rangeBand() / 2 )
-      .attr('dx',                 -3)
-      .attr('dy',                 '.35em')
-      .attr('text-anchor',        'end')
-      .style('fill',              'white')
-      .text(String)
