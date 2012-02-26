@@ -73,7 +73,7 @@ we need to generate appropriate queries.
 We do this by means of a query template,
 written in a combination of SPARQL and Handlebars.
 Variable information is provided by client-side code,
-based on user input, etc. 
+based on user input, etc.
 
 The following template, in particular, defines several parts of the query:
 
