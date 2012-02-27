@@ -38,7 +38,7 @@ It should be possible to use any recipe by navigating to its generated page.
 
 * [Demo_2       ](recipes/demo_2.html)
   <p/>
-  Same as Demo_1a, but refactored and annotated.
+  Same as Demo_1a, but massively refactored, annotated, etc.
 
 
 ## Implementation

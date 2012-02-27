@@ -1,7 +1,7 @@
 ---
 # recipes/demo_1a.markdown
 
-layout:   demo_1
+layout:   s_demo_1
 title:    Demo 1a
 
 _gsg:     https://github.com/RichMorin/SPARQLy-GUIs

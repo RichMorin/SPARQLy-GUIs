@@ -1,0 +1,91 @@
+#!/usr/bin/env ruby
+#
+# layouts - generate specific layout files
+#
+# Written by Rich Morin, CFCL, 2012.
+
+  require 'yaml'
+
+  potions   = {}
+  p_base    = '_potions'
+  p_patt    = p_base + '/*.yml'
+  p_paths   = Dir.glob(p_patt)
+
+  # Slurp in all of the potions.
+
+  p_paths.each do |p_path|
+    p_name            = File.basename(p_path, '.yml')
+    p_yaml            = File.read(p_path) + "\n"
+    potions[p_name]   = YAML.load(p_yaml)
+  end
+
+  ej_snips  = potions['_ext_js']
+  raise 'no "_ext_js" file found' unless ej_snips
+
+  # Generate specific layout files.
+
+  p_names   = potions.keys.sort
+
+  p_names.each do |p_name|
+    next if p_name =~ /^_/
+
+    out       = ''
+    potion    = potions[p_name]
+    layouts   = potion['layouts']
+    coffee    = layouts['coffee']
+    css       = layouts['css']
+    ext_js    = layouts['ext_js']
+
+    # Load external JavaScript, if any.
+
+    if ext_js
+      lines   = ext_js.map {|ej_name| ej_snips[ej_name].chomp }
+
+      out    += <<-EOT
+<!-- Load external JavaScript libraries. -->\n
+#{ lines.join("\n") }\n
+      EOT
+    end
+
+    # Include CoffeeScript files , if any.
+
+    if coffee
+      lines   = coffee.map {|n| "{% include #{ n }.coffee %}" }
+
+      out    += <<-EOT
+<!-- Include local CoffeeScript files. -->\n
+<script type="text/coffeescript">
+# <![CDATA[
+#{ lines.join("\n") }
+# ]]>
+</script>\n
+      EOT
+    end
+
+    # Include CSS files, if any.
+
+    if css
+      lines   = css.map {|n| "{% include styles/#{ n }.css %}" }
+
+      out    += <<-EOT
+<!-- Include local CSS files. -->\n
+<style type="text/css">
+#{ lines.join("\n") }
+</style>\n
+      EOT
+    end
+
+    # Fold in replacement content and write file.
+
+    l_base    = layouts['base']
+    i_path    = "_layouts/#{ l_base }.html"
+    o_path    = "_layouts/s_#{ p_name }.html"
+    i_text    = File.read(i_path)
+    o_text    = i_text.sub(/^ +!!!\s+p_layouts\s*\n/, out)
+
+    File.open(o_path, 'w') {|f| f.puts o_text }
+
+    puts "> Created s_#{ p_name } from #{ l_base }" #T
+
+  end
+

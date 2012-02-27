@@ -10,21 +10,32 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-language" content="en" />
 
-{% include demo_1/external_js.html %}
+<!-- Load external JavaScript libraries. -->
 
-    <script type="text/coffeescript">
+<script src="../external/jquery.min.js"></script>
+<script>var ENV = { EXTEND_PROTOTYPES: false };</script>
+<script src="../external/ember-0.9.4.js"></script>
+<script src="../external/d3.min.js"></script>
+<script src="../external/coffee-script.js"></script>
+
+<!-- Include local CoffeeScript files. -->
+
+<script type="text/coffeescript">
 # <![CDATA[
 {% include demo_2/lib_chart.coffee %}
 {% include demo_2/lib_query.coffee %}
 {% include demo_2/lib_table.coffee %}
 {% include demo_2/main.coffee %}
 # ]]>
-    </script>
+</script>
 
-    <style type="text/css">
+<!-- Include local CSS files. -->
+
+<style type="text/css">
 {% include styles/default.css %}
 {% include styles/demo_2.css %}
-    </style>
+</style>
+
   </head>
 
   <body>

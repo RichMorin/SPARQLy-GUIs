@@ -1,0 +1,21 @@
+# _potions/demo_2.yml - control file for demo_2.markdown
+
+layouts:
+
+  base:     g_demo
+
+  coffee:
+    - demo_2/lib_chart
+    - demo_2/lib_query
+    - demo_2/lib_table
+    - demo_2/main
+
+  css:
+    - default
+    - demo_2
+
+  ext_js:
+    - jquery
+    - ember
+    - d3
+    - coffee-script

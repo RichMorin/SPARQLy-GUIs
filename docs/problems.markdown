@@ -22,14 +22,6 @@ Configuration from .../Jekyll/_config.yml
 </pre></ul>
 
 
-## Layouts are hard-coded to recipes
-
-We're using Liquid to fold the CoffeeScript code into the page's HEAD.
-This works, but the current implementation hard-codes the `include` tags
-into the layout file.
-We're looking for a way to let the page specify which CS files to include.
-
-
 ## Syntax collisions between Liquid and Handlebars
 
 Both Liquid (used by Jekyll) and Handlebars
@@ -49,6 +41,7 @@ does not yet support this tag.
 ## SPARQL query time-outs on server
 
 It's not unusual for a SPARQL query to time out on the server.
-Demo_1, for example, times out occasionally.
+Demo_1, for example, timed out occasionally when we were searching
+for the Cities with the highest elevation.
 
 WIP: Catch time-outs and display a nastygram.

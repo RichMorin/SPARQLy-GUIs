@@ -4,6 +4,8 @@
 layout:   default
 title:    Resources
 
+_blah:    http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
+
 _cs:      http://coffeescript.org
 
 _dj:      http://mbostock.github.com/d3
@@ -122,6 +124,8 @@ into web content, using Liquid, Markdown, etc.
   * [Usage                ]({{ page._gmj }}/wiki/usage)
   * [Template Data        ]({{ page._gmj }}/wiki/Template-Data)
   * [YAML Front Matter    ]({{ page._gmj }}/wiki/yaml-front-matter)
+
+* [Blogging Like a Hacker ]({{ page._blah }})
 
 
 ### jQuery

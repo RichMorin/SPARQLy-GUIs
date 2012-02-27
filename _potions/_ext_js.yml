@@ -1,0 +1,14 @@
+# _potions/_ext_js.yml - control file for external JavaScript libraries
+
+'coffee-script':  |
+  <script src="../external/coffee-script.js"></script>
+
+d3:               |
+  <script src="../external/d3.min.js"></script>
+
+ember:            |
+  <script>var ENV = { EXTEND_PROTOTYPES: false };</script>
+  <script src="../external/ember-0.9.4.js"></script>
+
+jquery:           |
+  <script src="../external/jquery.min.js"></script>
