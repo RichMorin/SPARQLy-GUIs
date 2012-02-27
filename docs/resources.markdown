@@ -1,5 +1,7 @@
 ---
-layout:   default
+# docs/resources.markdown
+
+layout:   level_1
 title:    Resources
 
 _cs:      http://coffeescript.org
@@ -57,8 +59,8 @@ See below for specific information, links, etc.
 
 ### CoffeeScript
 
-I prefer CoffeeScript to JavaScript.
-The syntax is cleaner, more powerful, and safer (by default).
+We prefer CoffeeScript to JavaScript;
+its syntax is cleaner, more powerful, and safer (by default).
 That said, JavaScript is certainly allowed in recipes.
 
 * [CoffeeScript             ]({{ page._cs }})
@@ -98,7 +100,7 @@ we use this to publish our recipes, documentation, etc.
 
 Handlebars (actually, part of Ember)
 is a client-side semantic templating system.
-I use it to generate SPARQL queries, reports, etc.
+We use it to generate SPARQL queries, reports, etc.
 
 
 * [Handlebars             ](http://handlebarsjs.com)

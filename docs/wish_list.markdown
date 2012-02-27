@@ -1,5 +1,7 @@
 ---
-layout:   default
+# docs/wish_list.markdown
+
+layout:   level_1
 title:    Wish List
 ---
 

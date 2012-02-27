@@ -1,3 +1,5 @@
+<!-- README.markdown -->
+
 # RichMorin/SPARQLy-GUIs (`gh-pages` branch)
 
 ## Description

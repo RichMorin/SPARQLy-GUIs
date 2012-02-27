@@ -1,6 +1,8 @@
 ---
-layout:   default
-title:    RichMorin/SPARQLy-GUIs @ GitHub
+# index.markdown
+
+layout:   level_0
+title:    Index
 
 _gsg:     https://github.com/RichMorin/SPARQLy-GUIs
 

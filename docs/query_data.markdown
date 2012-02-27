@@ -1,5 +1,7 @@
 ---
-layout:   default
+# docs/query_data.markdown
+
+layout:   level_1
 title:    Query Data
 ---
 

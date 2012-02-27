@@ -1,5 +1,7 @@
 ---
-layout:   default
+# docs/problems.markdown
+
+layout:   level_1
 title:    Known Problems
 ---
 
@@ -22,10 +24,10 @@ Configuration from .../Jekyll/_config.yml
 
 ## Layouts are hard-coded to recipes
 
-I'm using Liquid to fold the CoffeeScript code into the page's HEAD.
+We're using Liquid to fold the CoffeeScript code into the page's HEAD.
 This works, but the current implementation hard-codes the `include` tags
 into the layout file.
-I'm looking for a way to let the page specify which CS files to include.
+We're looking for a way to let the page specify which CS files to include.
 
 
 ## Syntax collisions between Liquid and Handlebars
@@ -35,7 +37,7 @@ use the "{&#123; ... &#125;}" notation.
 
 Getting these strings past Liquid to Handlebars can be done,
 but it's a nuisance.
-My current workaround, for example,
+Our current workaround, for example,
 is to use "{| ... |}" and "{|| ... ||}"
 in place of "{&#123; ... &#123;}" and "{&#123;{ ... }&#123;}".
 

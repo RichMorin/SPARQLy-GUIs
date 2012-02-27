@@ -1,4 +1,6 @@
 ---
+# demo_2.markdown
+
 layout:   demo_2
 title:    Demo 2
 
