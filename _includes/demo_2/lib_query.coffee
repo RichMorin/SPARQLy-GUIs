@@ -1,26 +1,35 @@
-# demo_1/lib_query.coffee - query support functions
+# demo_2/lib_query.coffee - query support functions
 #
 # This file contains CoffeeScript code to support SPARQL queries.
+# It is included by Demo_1, a "SPARQLy GUIs" recipe.
 #
 # Written by Rich Morin, CFCL, 2012.
 
 
   add_commas = (value) ->
   #
-  # Add commas to a value (eg, "1,234")
+  # Add commas to a value (eg, "1,234").
+  #
+  # @param  value   [String]  input value
+  # @return         [String]  modified value
   #
   # Adapted from formatCommas() function,
   # in Danny Goodman's "JavaScript & DHTML Cookbook".
+ 
+    reg_exp  = /(-?\d+)(\d{3})/
 
-    re  = /(-?\d+)(\d{3})/
-    while re.test(value)
-      value = value.replace(re, "$1,$2")
+    while reg_exp.test(value)
+      value = value.replace(reg_exp, "$1,$2")
+
     value
 
 
   do_output = (data) ->
   #
   # Create all of the desired output.
+  #
+  # @param  data    [Object]  data from getJSON call
+  # @return         [void]
 
     do_chart(data)
     do_table(data)
@@ -29,6 +38,9 @@
   do_query = (event) ->
   #
   # Create and send the query, then process the result.
+  #
+  # @param  event   [Event?]  input e
+  # @return         [void]
 
 #   alert('do_query') #T
 
@@ -64,6 +76,9 @@
   fix_markup = (text) ->
   #
   # Convert our markup (if need be) into Handlebars format.
+  #
+  # @param  text    [String]  input markup text
+  # @return         [String]  converted markup text
 
     b2  = '{' + '{'
     b3  = '{' + '{' + '{'
@@ -77,6 +92,9 @@
   get_src = (pattern) ->
   #
   # Get HTMLized source code, killing entities.
+  #
+  # @param  pattern   [String]  CSS selector pattern
+  # @return           [String]  HTMLized source code
 
     $(pattern).html().replace(/&amp;/g, '&')
                      .replace(/&lt;/g,  '<')
@@ -86,6 +104,10 @@
   put_esc = (pattern, code_raw) ->
   #
   # Set HTMLized source code, adding entities.
+  #
+  # @param  pattern   [String]  CSS selector pattern
+  # @param  code_raw  [String]  "raw" source code
+  # @return           [void]
 
     code_esc  = code_raw.replace(/</g, '&lt;')
     $(pattern).html("<pre>#{ code_esc }</pre>")
@@ -94,6 +116,10 @@
   query_url = (base_url, query) ->
   #
   # Create the (GET) URL for the SPARQL query.
+  #
+  # @param  base_url  [String]  base for output URL
+  # @param  query     [String]  SPARQL query
+  # @return           [String]  generated URL
 
     params   =
       debug:                'on'
@@ -104,6 +130,8 @@
       save:                 'display'
 
     out = base_url + '?'
+
     for key, val of params
       out += "#{ key }=#{ encodeURIComponent(val) }&"
+
     out

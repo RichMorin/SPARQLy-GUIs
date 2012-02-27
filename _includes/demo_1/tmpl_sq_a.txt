@@ -1,0 +1,23 @@
+<!-- demo_1/tmpl_sq_a.txt -->
+
+<ul>
+  <pre id="sparql_template">
+{|#each prefixes |}PREFIX  {|| this ||}
+{|/each |}
+SELECT ?param ?label WHERE {
+  ?place
+    rdf:type dbpo:Country ;
+    {| param |} ?param ;
+    rdfs:label ?label .
+    FILTER (lang(?label) = "en")
+} ORDER BY DESC(?param) LIMIT {| limit |}
+  </pre>
+</ul>
+
+*Note:*
+Jekyll, used by GitHub Pages, handles inclusion processing (etc)
+by means of Liquid.
+Unfortunately, some of the syntax used by Liquid and Handlebars
+(eg, <tt>{&#123; ... &#125;}</tt>, <tt>{&#123;{ ... }&#125;}</tt>) collides.
+So, we are using a slightly modified version of the Handlebars syntax
+(eg, <tt>{| ... |}</tt>, <tt>{|| ... ||}</tt>).

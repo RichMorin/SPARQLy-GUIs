@@ -1,6 +1,6 @@
 ---
-layout:   demo_1
-title:    Demo 1a
+layout:   demo_2
+title:    Demo 2
 
 _gsg:     https://github.com/RichMorin/SPARQLy-GUIs
 ---

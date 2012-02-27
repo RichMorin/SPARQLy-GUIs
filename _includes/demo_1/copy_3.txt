@@ -1,0 +1,11 @@
+<!-- demo_1/text_3 -->
+
+### SPARQL query
+
+Here is the actual SPARQL query, as sent to DBpedia:
+
+<blockquote>
+  <div id="sparql_query">
+    This will be a SPARQL query...
+  </div>
+</blockquote>

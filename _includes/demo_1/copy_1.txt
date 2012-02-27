@@ -1,0 +1,60 @@
+<!-- demo_1/text_1 -->
+
+This page demonstrates a relatively simple SPARQLy GUIs recipe.
+It accepts user input, creates a SPARQL query and sends it to DBpedia,
+then displays the results in tabular and graphic form.
+
+The query asks for the most populous countries in the world,
+based on the `populationEstimate` attribute.
+To give the demonstration a try, set the Row Limit (if desired),
+then click the "Run Query" button.
+
+<ul>
+  <b>Row Limit:</b>
+  <select name="limit" id="set_limit">
+    <option>5</option>
+    <option>10</option>
+    <option selected="selected">20</option>
+    <option>40</option>
+  </select>
+  &nbsp;
+  <button id="run_query">Run Query</button>
+</ul>
+
+
+## Output
+
+DBpedia's information is harvested from Wikipedia,
+which is hand-edited by volunteers.
+So, certain values below may be incorrect or even missing.
+For example, some of the listed "countries" below may look peculiar
+and some expected countries (eg, USA) may not be present.
+
+
+### Table
+
+<ul>
+  <div id="sparql_table">
+    This will be a table...
+  </div>
+</ul>
+
+
+### Graph
+
+To keep the graph headings reasonable,
+we divide the values by 1,000,000 and round the result.
+So, for example, a heading of 600 represents
+a human population estimate of 600,000,000.
+Hover over a bar to see the country name and full population estimate.
+
+<ul>
+  <div id="sparql_graph">
+    This will be a bar graph...
+  </div>
+</ul>
+
+
+## Implementation Notes
+
+The source code for the SPARQLy GUIs pages is located at:

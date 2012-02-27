@@ -1,5 +1,5 @@
 ---
-layout:   base
+layout:   default
 title:    RichMorin/SPARQLy-GUIs @ GitHub
 
 _gsg:     https://github.com/RichMorin/SPARQLy-GUIs
@@ -34,14 +34,9 @@ It should be possible to use any recipe by navigating to its generated page.
   <p/>
   *Note:* As of 2012.0223, this demo does not work on GitHub Pages.
 
-
-## Documentation
-
-* [Problems     ](docs/problems.html)
-
-* [Resources    ](docs/resources.html)
-
-* [Wish List    ](docs/wish_list.html)
+* [Demo_2       ](recipes/demo_2.html)
+  <p/>
+  Same as Demo_1a, but refactored and annotated.
 
 
 ## Implementation
@@ -58,6 +53,8 @@ GitHub generates a corresponding set of HTML (etc) files, eg:
 
 Once these files are loaded into the browser, they act independently.
 
+More documentation is available [here](docs).
+
 ### Dependencies
 
 Each recipe has its own dependencies,
@@ -73,6 +70,7 @@ Common dependencies include:
   [Ember          ](http://emberjs.com),
   [jQuery         ](http://jquery.com),
   [Mustache       ]({{ page._wp }}/Mustache_%28template_system%29),
+  [Underscore     ](http://underscorejs.org/),
   ...
 
 * Linked Data and Semantic Web tools
@@ -80,6 +78,7 @@ Common dependencies include:
   [JSON-LD        ](http://json-ld.org/),
   [SPARQL         ]({{ page._wp }}/SPARQL),
   ...
+
 
 ### Modification
 
@@ -97,11 +96,14 @@ with <a href="http://git-scm.com">Git</a> by running:
 Get/view the source code on GitHub:
 [RichMorin/SPARQLy-GUIs ]({{ page._gsg }})
 
+
 ## Administrivia
+
 
 ### Author / Contact
 
 Rich Morin (rdm@cfcl.com)
+
 
 ### License
 

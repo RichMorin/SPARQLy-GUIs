@@ -1,0 +1,28 @@
+/* styles/demo_2.css */
+
+svg.chart {
+  shape-rendering:        crispEdges;
+}
+
+
+/* Histogram bars */
+
+svg.chart rect.bar {
+  fill:                   steelblue;
+  stroke:                 white;
+}
+
+
+/* X-axis lines and text */
+
+svg.chart line.x_axis {
+  stroke:                 grey;
+}
+
+svg.chart line.x_start {
+  stroke:                 black;
+}
+
+svg.chart text.x_axis {
+  font:                   10px sans-serif;
+}

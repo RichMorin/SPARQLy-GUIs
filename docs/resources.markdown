@@ -1,5 +1,5 @@
 ---
-layout:   base
+layout:   default
 title:    Resources
 
 _cs:      http://coffeescript.org
@@ -8,6 +8,7 @@ _dj:      http://mbostock.github.com/d3
 
 _ej:      http://emberjs.com
 
+_gdu:     https://github.com/documentcloud/underscore
 _gmj:     https://github.com/mojombo/jekyll
 _gsl:     https://github.com/Shopify/liquid
 _gwh:     https://github.com/wycats/handlebars.js
@@ -22,6 +23,10 @@ _rj:      http://requirejs.org
 
 _rsql:    http://www.w3.org/TR/rdf-sparql-query
 _rsqt:    'SPARQL Query Language for RDF'
+
+_us:      http://underscorejs.org
+_us_cs:   http://jashkenas.github.com/coffee-script/documentation/docs/underscore.html
+_us_js:   http://documentcloud.github.com/underscore/docs/underscore.html
 
 _wp:      http://en.wikipedia.org/wiki
 ---
@@ -42,6 +47,7 @@ This project uses a number of external resources
   [Ember              ](#ember),
   [Handlebars         ](#handlebars),
   [jQuery             ](#jquery)
+  [Underscore         ](#underscore),
 
 See below for specific information, links, etc.
 
@@ -166,3 +172,15 @@ When it runs out of steam, raw HTML can be included.
 [query language   ]({{ page._wp }}/query_language) supported by
 [RDF              ]({{ page._wp }}/RDF)
 [Triplestores     ]({{ page._wp }}/Triplestore).
+
+
+### Underscore
+
+Underscore provides a nice set of convenience functions,
+borrowed from functional programming, Ruby, etc.
+
+* [Underscore               ]({{ page._us }})
+
+* Annotated source code
+  *  [underscore.cs ]({{ page._us_cs }})
+  *  [underscore.js ]({{ page._us_js }})
