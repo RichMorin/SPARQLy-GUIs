@@ -1,4 +1,4 @@
-# demo_1/lib_table.coffee - table support functions
+# _includes/demo_1/lib_table.coffee - table support functions
 #
 # This file contains CoffeeScript code to support table creation.
 #

@@ -1,7 +1,7 @@
 ---
 # index.markdown
 
-layout:   level_0
+layout:   default
 title:    Index
 
 _gsg:     https://github.com/RichMorin/SPARQLy-GUIs

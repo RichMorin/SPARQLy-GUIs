@@ -1,4 +1,4 @@
-# demo_1/main.coffee - main page code
+# _includes/demo_1/main.coffee - main page code
 #
 # This file contains CoffeeScript code to initiate the page.
 # It is included by Demo_1, a "SPARQLy GUIs" recipe.

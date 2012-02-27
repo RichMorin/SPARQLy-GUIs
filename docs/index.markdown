@@ -1,7 +1,7 @@
 ---
 # docs/index.markdown
 
-layout:   level_1
+layout:   default
 title:    Documentation
 ---
 

@@ -1,4 +1,4 @@
-# demo_2/lib_query.coffee - query support functions
+# _includes/demo_2/lib_query.coffee - query support functions
 #
 # This file contains CoffeeScript code to support SPARQL queries.
 # It is included by Demo_1, a "SPARQLy GUIs" recipe.

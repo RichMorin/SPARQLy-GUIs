@@ -1,4 +1,4 @@
-<!-- demo_1/text_1 -->
+<!-- _includes/demo_1/copy_1.txt -->
 
 This page demonstrates a relatively simple SPARQLy GUIs recipe.
 It accepts user input, creates a SPARQL query and sends it to DBpedia,

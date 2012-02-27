@@ -1,4 +1,4 @@
-<!-- demo_1/tmpl_sq_a.txt -->
+<!-- _includes/demo_1/tmpl_sq_a.txt -->
 
 <ul>
   <pre id="sparql_template">

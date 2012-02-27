@@ -1,7 +1,7 @@
 ---
 # docs/resources.markdown
 
-layout:   level_1
+layout:   default
 title:    Resources
 
 _cs:      http://coffeescript.org

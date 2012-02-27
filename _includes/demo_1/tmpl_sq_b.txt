@@ -1,4 +1,4 @@
-<!-- demo_1/tmpl_sq_b.txt -->
+<!-- _includes/demo_1/tmpl_sq_b.txt -->
 
 {% raw %}
 <ul>

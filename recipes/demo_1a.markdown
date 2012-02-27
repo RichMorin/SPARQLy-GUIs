@@ -1,5 +1,5 @@
 ---
-# demo_1a.markdown
+# recipes/demo_1a.markdown
 
 layout:   demo_1
 title:    Demo 1a
