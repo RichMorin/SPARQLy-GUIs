@@ -2,9 +2,10 @@
 # docs/index.markdown
 
 layout:   default
-title:    Documentation
+title:    Index
 ---
 
+* [File Tree    ](file_tree.html)
 * [Potions      ](potions.html)
 * [Problems     ](problems.html)
 * [Query Data   ](query_data.html)
