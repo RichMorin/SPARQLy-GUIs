@@ -1,4 +1,4 @@
-<!-- _includes/demo_1/copy_3.txt -->
+<!-- demo_1/copy_3.txt -->
 
 ### SPARQL query
 

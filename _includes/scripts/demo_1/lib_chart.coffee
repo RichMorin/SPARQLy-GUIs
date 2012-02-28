@@ -1,4 +1,4 @@
-# _includes/demo_1/lib_chart.coffee - chart support functions
+# demo_1/lib_chart.coffee - chart support functions
 #
 # This file contains CoffeeScript code to support chart creation.
 #

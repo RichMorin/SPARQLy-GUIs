@@ -8,7 +8,7 @@ title:    Potions
 There are some tasks which need to be handled before Jekyll runs.
 So, we have some small scripts (ie, potions) that perform these tasks
 
-## _bin/p_layouts - create recipe-specific layout files
+## `_bin/layouts` - create recipe-specific layout files
 
 Each recipe has specific requirements
 (eg, CoffeeScript and CSS files, external JavaScript libraries).
@@ -22,6 +22,6 @@ looking for YAML control files (eg, `demo_2.yml`).
 
 The `layouts` section of these files tells the script
 what need to be done for the corresponding recipe.
-The generic (eg, `g_demo.html`)
-and specific (eg, `s_demo_2.html`) files
+The generic input files (eg, `g_demo.html`)
+and specific output files (eg, `s_demo_2.html`)
 are stored in the `_layouts` directory.

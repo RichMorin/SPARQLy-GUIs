@@ -1,17 +1,12 @@
-# _includes/demo_2/lib_table.coffee - table support functions
+# demo_1/lib_table.coffee - table support functions
 #
 # This file contains CoffeeScript code to support table creation.
-# It is included by Demo_1, a "SPARQLy GUIs" recipe.
 #
 # Written by Rich Morin, CFCL, 2012.
 
   do_table = (data) ->
   #
   # Create a table from data returned from the SPARQL query.
-  #
-  #
-  # @param  data    [String]  data from getJSON call
-  # @return         [void]
 
 #   alert('do_table') #T
 
@@ -30,8 +25,6 @@
   get_hdr_html = () ->
   #
   # Generate HTML for a table header row.
-  #
-  # @return     [String]  generated HTML
 
     html = '''
       <th align="right">param</th>
@@ -45,9 +38,6 @@
   get_row_html = (row) ->
   #
   # Generate HTML for a table data row.
-  #
-  # @param  data  [Hash]    data row from getJSON call
-  # @return       [String]  generated HTML
 
     label   = row['label']['value']
     param   = add_commas( row['param']['value'] )
