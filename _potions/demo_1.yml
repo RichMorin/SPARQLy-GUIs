@@ -16,5 +16,5 @@ layouts:
   ext_js:
     - jquery
     - ember
-    - d3
+    - d3.v2
     - coffee-script

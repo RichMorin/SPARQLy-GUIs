@@ -1,14 +1,28 @@
 # _potions/_ext_js.yml - control file for external JavaScript libraries
 
-'coffee-script':  |
-  <script src="../external/coffee-script.js"></script>
+'coffee-script':
+  # No minified version is distributed.
+  dev:    coffee-script.js
+  prod:   coffee-script.js
 
-d3:               |
-  <script src="../external/d3.min.js"></script>
 
-ember:            |
-  <script>var ENV = { EXTEND_PROTOTYPES: false };</script>
-  <script src="../external/ember-0.9.4.js"></script>
+'d3.v2':
+  dev:    d3.v2.js
+  prod:   d3.v2.min.js
 
-jquery:           |
-  <script src="../external/jquery.min.js"></script>
+
+ember:
+  pre:    |
+    <script>var ENV = { EXTEND_PROTOTYPES: false };</script>
+  dev:    ember-0.9.5.js
+  prod:   ember-0.9.5.min.js
+
+
+jquery:
+  dev:    jquery-1.7.1.js
+  prod:   jquery-1.7.1.min.js
+
+
+underscore:
+  dev:    underscore.js
+  prod:   underscore-min.js

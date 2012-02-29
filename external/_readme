@@ -1,0 +1,58 @@
+external/_readme
+================
+
+Here's some information on where and how we acquired these files
+(Eventually, we'll automate this :-):
+
+
+CoffeeScript
+
+  Go to http://coffeescript.org
+  Click "Latest Version" link.
+  Unpack it (jashkenas-coffee-script-*.tar.gz as jashkenas-coffee-script-*).
+  Copy over extras/coffee-script.js
+  (No minified version is distributed).
+
+
+D3
+
+  Go to https://github.com/mbostock/d3/archives/master
+  Download latest package (eg, v2.8.0).
+  Unpack it (eg, mbostock-d3-*.zip as mbostock-d3-*).
+  Copy d3.v2.js and d3.v2.min.js to external.
+
+
+Deck
+
+  Go to http://imakewebthings.github.com/deck.js/
+  Click the "Download" button.
+  Unpack it (eg, imakewebthings-deck.js-*.zip as imakewebthings-deck.js-*).
+
+  To be continued, eg:
+    Decide which libraries to install (eg, extensions, Modernizr).
+
+
+Ember
+
+  Go to http://emberjs.com
+  Click "DOWNLOAD EMBER" button.
+  Save result (eg, as ember-0.9.5.min.js).
+  Click "debug build" link.
+  Save result (eg, as ember-0.9.5.js).
+
+
+jQuery
+
+  Go to http://docs.jquery.com/Downloading_jQuery#Current_Release
+  Click "Minified" link.
+  Save result (eg, as jquery-1.7.1.min.js).
+  Click "Uncompressed" link.
+  Save result (eg, as jquery-1.7.1.min.js).
+
+
+Underscore
+
+  Go to http://documentcloud.github.com/underscore/underscore.js
+  Save result (eg, as underscore.js).
+  Go to http://documentcloud.github.com/underscore/underscore-min.js
+  Save result (eg, as underscore-min.js).
