@@ -1,3 +1,0 @@
-<!-- docs/navigation.txt -->
-
-[Main Index](/)
