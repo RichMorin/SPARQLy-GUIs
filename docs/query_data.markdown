@@ -1,7 +1,7 @@
 ---
 # docs/query_data.markdown
 
-layout:   default
+layout:   docs
 title:    Query Data
 ---
 

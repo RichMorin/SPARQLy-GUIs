@@ -1,31 +1,27 @@
 ---
 # docs/wish_list.markdown
 
-layout:   default
+layout:   docs
 title:    Wish List
 ---
 
 ## Development and Production modes
 
 Development mode should be optimized for debugging.
-Production mode should be optimized
-for rapid execution and minimal load on the server.
+Production mode should be optimized for rapid loading
+and minimal impact on the server (ie, GitHub Pages).
 
 
 ### Development mode
 
 * External libraries should be loaded as full versions.
 
-* Internal libraries should be compiled from JavaScript,
-  either on the server or (optionally) the client.
+* Internal libraries should be compiled into JavaScript on the server.
 
 
 ### Production mode
 
-* External libraries should be stored and loaded
-  in a filtered, minified, and catenated format.
-
-* Internal libraries should be loaded from JavaScript.
+* All libraries should be stored and loaded in minified, catenated format.
 
 
 ### Current status
@@ -35,7 +31,8 @@ for rapid execution and minimal load on the server.
 
 * The `layouts` script generates specific layouts,
   based on `_potions/*.yml`.
-  It attempts to use the requested type (eg, `dev`),
-  but falls back to other types if need be.
+  It attempts to use the requested type (eg, `dev`, `prod`),
+  bailing out if it can't find the needed information, etc.
 
-* Internal libraries are used in CoffeeScript form.
+* Internal libraries are loaded in full CoffeeScript form
+  and compiled on the client.

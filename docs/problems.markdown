@@ -1,7 +1,7 @@
 ---
 # docs/problems.markdown
 
-layout:   default
+layout:   docs
 title:    Known Problems
 ---
 

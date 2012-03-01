@@ -1,7 +1,7 @@
 ---
 # docs/potions.markdown
 
-layout:   default
+layout:   docs
 title:    Potions
 ---
 

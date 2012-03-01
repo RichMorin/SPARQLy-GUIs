@@ -1,17 +1,17 @@
 ---
 # docs/file_tree.markdown
 
-layout:   default
+layout:   docs
 title:    File Tree
 ---
 
 Our file tree layout is fairly regular, if a bit sprawly.
-In part, this is a reflection of our use of DRY approaches
-and "convention over configuration" (from Ruby on Rails).
+In part, this reflects our use of DRY (Don't Repeat Yourself) approaches
+and "convention over configuration" (both inspired from Ruby on Rails).
 
 The use of lots of directories and files has good and bad points.
 The structure is easy to navigate, once learned,
-but learning it can be a challenge for newcomers.
+but learning it could be a challenge for newcomers.
 However, the following notes may help...
 
 <ul>
@@ -22,6 +22,8 @@ _bin
 | | | demo_1/*.coffee   # CoffeeScript used by demo_1
 | | | ...
 | | styles/             # eg, CSS, SASS
+| | | default.html      # used by ordinary pages
+| | | demo_2.html       # used by demo_2
 | | text/               # eg, Markdown
 | | | demo_1/           # text files used by demo_1
 | | | | copy_1.txt      # textual "copy"

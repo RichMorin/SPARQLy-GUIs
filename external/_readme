@@ -11,7 +11,7 @@ CoffeeScript
   Click "Latest Version" link.
   Unpack it (jashkenas-coffee-script-*.tar.gz as jashkenas-coffee-script-*).
   Copy over extras/coffee-script.js
-  (No minified version is distributed).
+  (No un-minified version is distributed).
 
 
 D3
@@ -47,7 +47,7 @@ jQuery
   Click "Minified" link.
   Save result (eg, as jquery-1.7.1.min.js).
   Click "Uncompressed" link.
-  Save result (eg, as jquery-1.7.1.min.js).
+  Save result (eg, as jquery-1.7.1.js).
 
 
 Underscore
